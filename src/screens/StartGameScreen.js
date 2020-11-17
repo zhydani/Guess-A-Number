@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard} from 'react-native';
+import {View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard, Alert} from 'react-native';
 
 import Card from '../components/Card'
 import Input from '../components/Input'
@@ -39,7 +39,7 @@ const StartGameScreen = props => {
 
     return (
         <TouchableWithoutFeedback onPress={() => {
-            keyboard.dismiss();
+            Keyboard.dismiss();
         }}>
             <View style={styles.screen}>
                 <Text style={styles.title}>Start a New Game!</Text>
